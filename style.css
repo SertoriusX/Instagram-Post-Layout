@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;       /* light gray page background */
+  margin: 0;
+  padding: 40px 0;
+}
+
+.container {
+  width: 400px;              /* fixed card width */
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.c-body {
+  width: 100%;
+  background-color: #fff;    /* white card background */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 12px;       /* rounded card */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* soft shadow */
+  box-sizing: border-box;
+}
+
+/* header */
+.c-body-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.c-body-first-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.c-body-first-left img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;        /* round avatar */
+}
+
+.c-body-first-left h1 {
+  font-size: 15px;
+  margin: 0;
+}
+
+.c-body-first-left p {
+  font-size: 13px;
+  margin: 0;
+  color: #666;
+}
+
+.c-body-first-right {
+  font-size: 18px;           /* slightly larger icon */
+  color: #444;
+  cursor: pointer;
+}
+
+/* rows */
+.c-body-row img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* action row */
+.c-body-row.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;           /* bigger icons */
+  color: #333;
+  padding: 0 4px;
+}
+
+.c-body-row.actions i {
+  margin-right: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.c-body-row.actions i:hover {
+  transform: scale(1.2);     /* grow on hover */
+  color: #e74c3c;            /* red highlight on hover */
+}
